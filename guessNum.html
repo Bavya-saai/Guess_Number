@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(145, 238, 238);
+        }
+        button{
+            background-color: rgb(238, 149, 219);
+        }
+        button:hover{
+            background-color: rgb(241, 115, 189);
+            box-shadow: 5px 3px 3px rgb(136, 8, 130);
+        }
+        input{
+            height: 30px;
+            box-shadow: 5px 3px 3px rgb(238, 85, 238);
+            background-color: rgb(236, 59, 213);
+            color: white;
+            border: 2px solid rgb(77, 75, 75);
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="./guessNum.js" defer ></script>
+   <h1> GUESS THE NUMBER FROM 1 TO 10 </h1>
+   <input type="number" id="num"> <br><br>
+   <button onclick="check()">CHECK</button>
+   <P id="result">RIGHT / WRONG</P>
+   <p id="chance">CHANCE:10 </p>
+   <P id="score">SCORE:0 </P>
+</body>
+</html>
